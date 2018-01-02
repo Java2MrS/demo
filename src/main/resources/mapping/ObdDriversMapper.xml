@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dhcc.dao.ObdDriversMapper" >
+  <resultMap id="BaseResultMap" type="com.dhcc.entity.ObdDrivers" >
+    <id column="CD_ID" property="cdId" jdbcType="BIGINT" />
+    <result column="DRIVERNAME" property="drivername" jdbcType="VARCHAR" />
+    <result column="CARDNO" property="cardno" jdbcType="VARCHAR" />
+    <result column="TELEPHONE" property="telephone" jdbcType="VARCHAR" />
+    <result column="DRIVER_NUM" property="driverNum" jdbcType="VARCHAR" />
+    <result column="LICESING_TIME" property="licesingTime" jdbcType="VARCHAR" />
+    <result column="DRIVERTYPE_CODE" property="drivertypeCode" jdbcType="VARCHAR" />
+    <result column="DRIVER_AGE" property="driverAge" jdbcType="VARCHAR" />
+    <result column="comp_id" property="compId" jdbcType="VARCHAR" />
+    <result column="deptmt_id" property="deptmtId" jdbcType="VARCHAR" />
+    <result column="IS_DELETE" property="isDelete" jdbcType="VARCHAR" />
+    <result column="image" property="image" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    CD_ID, DRIVERNAME, CARDNO, TELEPHONE, DRIVER_NUM, LICESING_TIME, DRIVERTYPE_CODE, 
+    DRIVER_AGE, comp_id, deptmt_id, IS_DELETE,image
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select  *
+    from obd_drivers
+    where CD_ID = #{cdId,jdbcType=BIGINT}
+  </select>
+
+</mapper>

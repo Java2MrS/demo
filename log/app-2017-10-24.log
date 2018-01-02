@@ -1,0 +1,53 @@
+2017-10-24 11:53:39,903 INFO o.s.b.StartupInfoLogger [main] Starting DemoApplication on Admin-pc with PID 22904 (D:\Work\Workspaces\demo\target\classes started by Admin in D:\Work\Workspaces\demo)
+2017-10-24 11:53:40,140 INFO o.s.b.SpringApplication [main] The following profiles are active: dev
+2017-10-24 11:53:40,587 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 5.3.5.Final
+2017-10-24 11:53:40,761 INFO o.s.c.s.AbstractApplicationContext [main] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@194bcebf: startup date [Tue Oct 24 11:53:40 CST 2017]; root of context hierarchy
+2017-10-24 11:53:44,528 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-10-24 11:53:45,360 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties' of type [org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-24 11:53:45,364 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$e43b86db] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-24 11:53:45,369 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Tomcat' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Tomcat] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-24 11:53:45,405 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-24 11:53:45,528 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'dataSource' of type [org.apache.tomcat.jdbc.pool.DataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-24 11:53:45,821 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-24 11:53:45,830 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-24 11:53:45,831 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'obdDriversMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-24 11:53:46,598 INFO o.s.b.c.e.t.TomcatEmbeddedServletContainer [main] Tomcat initialized with port(s): 8080 (http)
+2017-10-24 11:53:46,611 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2017-10-24 11:53:46,612 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-10-24 11:53:46,750 INFO o.a.j.l.DirectJDKLog [localhost-startStop-1] Initializing Spring embedded WebApplicationContext
+2017-10-24 11:53:46,751 INFO o.s.b.c.e.EmbeddedWebApplicationContext [localhost-startStop-1] Root WebApplicationContext: initialization completed in 5991 ms
+2017-10-24 11:53:46,998 INFO o.s.b.w.s.ServletRegistrationBean [localhost-startStop-1] Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-24 11:53:47,003 INFO o.s.b.w.s.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-24 11:53:47,005 INFO o.s.b.w.s.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-24 11:53:47,005 INFO o.s.b.w.s.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-24 11:53:47,006 INFO o.s.b.w.s.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-24 11:53:47,913 INFO o.s.w.s.m.m.a.RequestMappingHandlerAdapter [main] Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@194bcebf: startup date [Tue Oct 24 11:53:40 CST 2017]; root of context hierarchy
+2017-10-24 11:53:48,003 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/JSON_error/json]}" onto public java.lang.String com.dhcc.controller.ApiErrorController.getJsonError() throws java.lang.Exception
+2017-10-24 11:53:48,005 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/error/classNotFound]}" onto public java.lang.String com.dhcc.controller.ErrorController.classNotFound() throws java.lang.ClassNotFoundException
+2017-10-24 11:53:48,006 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/error/error]}" onto public java.lang.String com.dhcc.controller.ErrorController.throwError() throws java.lang.Exception
+2017-10-24 11:53:48,008 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/hello]}" onto public java.lang.String com.dhcc.controller.HelloController.index(org.springframework.ui.ModelMap)
+2017-10-24 11:53:48,010 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/ObdDriver/getDriver]}" onto public com.dhcc.entity.ObdDrivers com.dhcc.controller.JdbcController.getDrivers()
+2017-10-24 11:53:48,011 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/redis/setValue]}" onto public java.lang.String com.dhcc.controller.RedisController.setValue()
+2017-10-24 11:53:48,012 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/redis/getValue]}" onto public com.dhcc.entity.RedisUser com.dhcc.controller.RedisController.getRedis(java.lang.String)
+2017-10-24 11:53:48,014 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/users/],methods=[GET]}" onto public java.util.List<com.dhcc.entity.UserBean> com.dhcc.controller.UserController.getUserList()
+2017-10-24 11:53:48,015 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/users/{id}],methods=[GET]}" onto public com.dhcc.entity.UserBean com.dhcc.controller.UserController.getUser(java.lang.Long)
+2017-10-24 11:53:48,015 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/users/],methods=[POST]}" onto public java.lang.String com.dhcc.controller.UserController.postUser(com.dhcc.entity.UserBean)
+2017-10-24 11:53:48,016 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/users/{id}],methods=[PUT]}" onto public java.lang.String com.dhcc.controller.UserController.putUser(java.lang.Long,com.dhcc.entity.UserBean)
+2017-10-24 11:53:48,016 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/users/{id}],methods=[DELETE]}" onto public java.lang.String com.dhcc.controller.UserController.deleteUser(java.lang.Long)
+2017-10-24 11:53:48,019 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-24 11:53:48,019 INFO o.s.w.s.h.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-24 11:53:48,070 INFO o.s.w.s.h.AbstractUrlHandlerMapping [main] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-24 11:53:48,070 INFO o.s.w.s.h.AbstractUrlHandlerMapping [main] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-24 11:53:48,096 INFO o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [main] Detected @ExceptionHandler methods in globalExceptionHandler
+2017-10-24 11:53:48,135 INFO o.s.w.s.h.AbstractUrlHandlerMapping [main] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-24 11:53:49,350 INFO o.s.j.e.MBeanExporter [main] Registering beans for JMX exposure on startup
+2017-10-24 11:53:49,394 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2017-10-24 11:53:49,415 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2017-10-24 11:53:49,431 INFO o.a.j.l.DirectJDKLog [main] Using a shared selector for servlet write/read
+2017-10-24 11:53:49,452 INFO o.s.b.c.e.t.TomcatEmbeddedServletContainer [main] Tomcat started on port(s): 8080 (http)
+2017-10-24 11:53:49,473 INFO o.s.b.StartupInfoLogger [main] Started DemoApplication in 10.857 seconds (JVM running for 13.032)
+2017-10-24 14:35:03,500 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-24 14:35:03,505 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] FrameworkServlet 'dispatcherServlet': initialization started
+2017-10-24 14:35:03,665 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] FrameworkServlet 'dispatcherServlet': initialization completed in 160 ms
+2017-10-24 14:37:51,833 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-6] Invalid chunk starting at byte [220] and ending at byte [221] with a value of [=] ignored
+ Note: further occurrences of Parameter errors will be logged at DEBUG level.
